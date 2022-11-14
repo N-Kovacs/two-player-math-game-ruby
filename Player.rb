@@ -4,4 +4,8 @@ class Player
     @name = name
     @lives= 3
   end
+
+  def reducelife
+    @lives -= 1
+  end
 end
