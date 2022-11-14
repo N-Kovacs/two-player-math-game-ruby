@@ -3,8 +3,6 @@ class Turn
   def initialize(active, inactive)
     @activeplayer = active
     @inactiveplayer=  inactive
-    @question = ""
-    @answer = ""
     @var1 = rand(1..20)
     @var2 = rand(1..20)
     question
@@ -49,7 +47,7 @@ class Turn
   end
 
   def livesprint
-    if @activeplayer.name = "Player 1"
+    if @activeplayer.name == "Player 1"
       print "P1: ", @activeplayer.lives, "/3 vs P2 ", @inactiveplayer.lives, "/3 \n"
     else
       print "P1: ", @inactiveplayer.lives, "/3 vs P2 ", @activeplayer.lives, "/3 \n"
